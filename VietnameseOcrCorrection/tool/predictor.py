@@ -1,13 +1,13 @@
-from model.seq2seq import Seq2Seq
-from model.transformer import LanguageTransformer
+from VietnameseOcrCorrection.model.seq2seq import Seq2Seq
+from VietnameseOcrCorrection.model.transformer import LanguageTransformer
 import torch
-from tool.translate import translate
-from model.vocab import Vocab
-from config import alphabet
+from VietnameseOcrCorrection.tool.translate import translate
+from VietnameseOcrCorrection.model.vocab import Vocab
+from VietnameseOcrCorrection.config import alphabet
 import numpy as np
 import re
 from collections import defaultdict
-from tool.utils import get_bucket
+from VietnameseOcrCorrection.tool.utils import get_bucket
 
 
 class Predictor(object):

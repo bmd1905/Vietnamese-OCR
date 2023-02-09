@@ -1,19 +1,19 @@
 import numpy as np
 import os
 import torch
-from dataloader.dataset import BasicDataset, Collator, ClusterRandomSampler
+from VietnameseOcrCorrection.dataloader.dataset import BasicDataset, Collator, ClusterRandomSampler
 from torch.optim import AdamW
 from torch.optim.lr_scheduler import OneCycleLR
 from config import alphabet
-from optim.loss import LabelSmoothingLoss
-from model.seq2seq import Seq2Seq
-from model.transformer import LanguageTransformer
+from VietnameseOcrCorrection.optim.loss import LabelSmoothingLoss
+from VietnameseOcrCorrection.model.seq2seq import Seq2Seq
+from VietnameseOcrCorrection.model.transformer import LanguageTransformer
 from torch.utils.data import DataLoader
 from tool.utils import batch_to_device, compute_accuracy
 from tool.translate import translate
 import time
 from tool.logger import Logger
-from model.vocab import Vocab
+from VietnameseOcrCorrection.model.vocab import Vocab
 from tqdm import tqdm
 
 
